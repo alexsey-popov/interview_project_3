@@ -18,7 +18,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('provider');
-            $table->date('validity period')->nullable();
+            $table->date('validity_period')->nullable();
             $table->string('currency');
             $table->timestamps();
             $table->softDeletes();

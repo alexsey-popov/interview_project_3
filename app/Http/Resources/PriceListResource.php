@@ -17,7 +17,7 @@ class PriceListResource extends JsonResource
         return [
             'name' => $this->name,
             'provider' => $this->faprovider,
-            'validity_period' => $this->validity_period,
+            'validity_period' => $this->validity_period->format('d.m.Y'),
             'currency' => $this->currency,
         ];
     }

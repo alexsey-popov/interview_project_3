@@ -19,7 +19,7 @@ class PriceListFactory extends Factory
         return [
             'name' => $this->faker->word,
             'provider' => $this->faker->company,
-            'validity period' => $this->faker->dateTimeBetween('+1 days', '+2 days'),
+            'validity_period' => $this->faker->dateTimeBetween('-1 days', '+2 days'),
             'currency' => $this->faker->currencyCode,
         ];
     }
