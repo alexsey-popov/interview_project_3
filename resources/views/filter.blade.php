@@ -9,7 +9,7 @@
                             'type'  => 'datetime-local',
                             'labelClass' => '',
                             'inputClass' => '',
-                            'value' => old('actuality_date', $request->get('actuality_date', date('Y-m-d H:i'))),
+                            'value' => old('actuality_date', $request->get('actuality_date', date('Y-m-d\TH:i'))),
                 ])
             </div>
             <div class="col-md-3 mb-3" >
