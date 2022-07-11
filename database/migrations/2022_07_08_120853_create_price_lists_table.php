@@ -23,7 +23,7 @@ return new class extends Migration
             $table->timestamps();
             $table->softDeletes();
         });
-        DB::raw('ALTER TABLE price_lists ADD SYSTEM VERSIONING;');
+        DB::statement(DB::raw('ALTER TABLE price_lists ADD SYSTEM VERSIONING'));
     }
 
     /**
@@ -33,7 +33,7 @@ return new class extends Migration
      */
     public function down()
     {
-        DB::raw('ALTER TABLE price_lists ADD SYSTEM VERSIONING;');
+        DB::statement(DB::raw('ALTER TABLE price_lists ADD SYSTEM VERSIONING'));
         Schema::dropIfExists('price_lists');
     }
 };
