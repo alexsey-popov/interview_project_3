@@ -33,7 +33,7 @@
         ])
 
         @include('layout.input', [
-            'title' => 'Цена',
+            'title' => 'Цена ('.$priceListItem->priceList->currency.')',
             'name'  => 'price',
             'type'  => 'number',
             'step'  => 'any',
