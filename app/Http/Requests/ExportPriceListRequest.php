@@ -25,7 +25,7 @@ class ExportPriceListRequest extends FormRequest
     {
         return [
             'lists' => 'required|array',
-            'format' => 'required|in:JSON,XML,CSV'
+            'format' => 'required|in:JSON,XLSX'
         ];
     }
 

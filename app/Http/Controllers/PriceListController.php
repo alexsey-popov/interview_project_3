@@ -168,6 +168,7 @@ class PriceListController extends Controller
                     'format' => 'JSON',
                     'data' => $priceList->toArray()
                 ], JSON_PRETTY_PRINT).'</pre>',
+            'XLSX' => PriceList::downloadXLSX($date, $priceList)
         };
     }
 }

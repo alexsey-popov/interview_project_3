@@ -68,11 +68,9 @@
             <input type="radio" class="btn-check" name="format" value="JSON" id="formatJson" autocomplete="off" checked>
             <label class="btn btn-outline-primary" for="formatJson">JSON</label>
 
-            <input type="radio" disabled class="btn-check" name="format" value="XML" id="formatXML" autocomplete="off">
-            <label class="btn btn-outline-primary" for="formatXML">XML</label>
+            <input type="radio" class="btn-check" name="format" value="XLSX" id="formatXLSX" autocomplete="off">
+            <label class="btn btn-outline-primary" for="formatXLSX">XLSX</label>
 
-            <input type="radio" disabled class="btn-check" name="format" value="CSV" id="formatCSV" autocomplete="off">
-            <label class="btn btn-outline-primary" for="formatCSV">CSV</label>
         </div>
         @error('format')
             <span class="invalid-feedback" role="alert">
